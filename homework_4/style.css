@@ -1,0 +1,65 @@
+.prise {
+    display: flex;
+    flex-direction: row;
+}
+
+.carta {
+    border-radius: 10px;
+    margin: 20px;
+    width: 250px;
+    height: 370px;
+    border: solid;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+}
+
+.zoom {
+    transition: .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.enterprise hr {
+	 background-color: tomato;
+	 height: 1px;
+}
+
+.button {
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 8px 10px;
+}
+
+.btn_ent {
+    background-color: tomato;
+}
+
+.professional hr {
+    background-color: coral;
+	 height: 1px;
+}
+
+.btn_prf {
+    background-color: coral;
+}
+
+.standart hr {
+    background-color: turquoise;
+	 height: 1px;
+}
+
+.btn_stn {
+    background-color: turquoise;
+}
+
+.basic hr {
+	background-color: yellowgreen;
+	height: 1px;
+}
+
+.btn_bas {
+    background-color: yellowgreen;
+}
