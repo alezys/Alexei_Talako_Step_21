@@ -197,22 +197,22 @@
 // 	}
 // }
 
-let end = (numberOne > numberTwo) ? numberTwo : numberOne;
-let start = (numberOne > numberTwo) ? numberOne : numberTwo;
-let start = 0;
-let	end = 100;
-let supposedNumber;
-let isGuessed = false;
+let start = 0	// Задача №10
+let end = 100
+let supposedNumber = ``
+let isGuessed = false
 alert(`Think of number ${start} do ${end}`)
 while (isGuessed === false) {
-	supposedNumber = Math.round((start + end) / 2);
-	const answer = prompt(`Your number is <, > or == ${supposedNumber}`);
-	if (answer === '==') {
-    	alert('Yes!!!');
-    	isGuessed = true;
+  supposedNumber = Math.round((start + end) / 2)
+  const answer = prompt(`Your number is '<', '>' or '==' ${supposedNumber}`)
+  if (answer === '==') {
+    alert('Yes!!!')
+    isGuessed = true
   } else if (answer === '<') {
-    	end = supposedNumber;
+    end = supposedNumber
   } else if (answer === '>') {
-    	start = supposedNumber;
+    start = supposedNumber
+  } else {
+    break
   }
 }
