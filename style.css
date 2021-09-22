@@ -1,0 +1,139 @@
+:root {   
+     --offset: -25px;  /* Переменная CSS для костыля*/
+}
+
+:root {
+    --shiftLeft: -55px;
+}
+
+.content1 {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.content2 {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.content3 {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0px;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.content4 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 0px;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.content5 {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0px;
+    align-items: flex-start;
+    width: 600px;
+    height: 300px;
+}
+
+.content6 {
+    background-color: greenyellow;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    border: 0px;
+    width: 200px;
+    height: 100px;
+}
+
+.modalWindow {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.tooltip {
+	cursor: grab;
+}
+
+.tooltip1 {
+	cursor: grab;
+}
+
+.tooltip::after {
+	background: purple;
+	color: white;
+	content: attr(data-tooltip);
+    margin-left: var(--shiftLeft);
+	margin-top: var(--offset);
+	opacity: 0;
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+
+.tooltip1::after {
+	background: purple;
+	color: white;
+	content: attr(data-tooltip);
+    margin-left: var(--shiftLeft);
+	margin-top: var(--offset);
+	opacity: 0;
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.tooltip1:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
