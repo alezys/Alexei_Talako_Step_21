@@ -1,6 +1,6 @@
 :root {
     --widthBlock: 700px;
-    --heightBlock: 80px;
+    --heightBlock: 300px;
 }
 
 .linkListAll, .listDivDisk, .listBook {
@@ -37,4 +37,11 @@
     width: 30px;
     height: 30px;
     background-color: black;
+}
+
+.zero {
+	background-color: greenyellow;
+	width: 380px;
+	height: 200px;
+	position: absolute;
 }
