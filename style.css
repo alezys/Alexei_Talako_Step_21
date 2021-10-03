@@ -1,0 +1,47 @@
+:root {
+    --widthBlock: 700px;
+    --heightBlock: 300px;
+}
+
+.linkListAll, .listDivDisk, .listBook {
+    background-color: antiquewhite;
+    width: 350px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.infoPress {
+    display: flex;
+    flex-direction: column;
+}
+
+.listPersons {
+    background-color: whitesmoke;
+    width: 380px;
+    margin-top: 30px;
+}
+
+.innerBlock {
+    position: relative;
+    border-style: solid;
+    width: var(--widthBlock);
+    height: var(--heightBlock);
+}
+
+.squareBlock {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.zero {
+	background-color: greenyellow;
+	width: 380px;
+	height: 200px;
+	position: absolute;
+}

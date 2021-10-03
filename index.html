@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="site">
+        <div class="linkListAll">
+            <ul type="circle" id="pulp">
+                <li><a>index.html</a></li>
+                <li><a>http://google.com</a></li>
+                <li><a>https://itstep.org</a></li>
+                <li><a>https://mystat.itstep.org</a></li>
+                <li><a>/images/cat.jpg</a></li>
+                <li><a>/local/path</a></li>
+            </ul>
+        </div>
+        <div class="listDivDisk">
+            <ul type="disk" id="listDisk">
+                <li><span>This PC</span>
+                    <ul type="circle">
+                        <li><span>Local disk (C:)</span>
+                            <ul type="square">
+                                <li><span>Program files</span></li>
+                                <li><span>User</span></li>
+                                <li><span>Windows</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul type="circle">
+                        <li><span>Local disk (D:)</span>
+                            <ul type="square">
+                                <li><span>New folder 1</span></li>
+                                <li><span>New folder 2</span></li>
+                                <li><span>New folder 3</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul type="circle">
+                        <li><span>Local disk (E:)</span>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="listBook">
+            <ol id="bibl">
+                <li><span>Book 1</span></li>
+                <li><span>Book 2</span></li>
+                <li><span>Book 3</span></li>
+                <li><span>Book 4</span></li>
+                <li><span>Book 5</span></li>
+                <li><span>Book 6</span></li>
+            </ol>
+        </div>
+        <div class="listBook" id="saveTextDiv">
+            <div class="infoPress">
+                <span>Press Ctrl+E for edit text.</span>
+                <span>Press Ctrl+S for save text.</span>
+            </div>
+            <hr>
+            <div id="contentText" hidden>qq
+            </div>
+            <textarea name="" id="areaText" cols="30" rows="10"></textarea>
+        </div>
+        <div class="listPersons" id="tablePersons">
+            <table border>
+                <tbody  id="listName">
+                    <tr>
+                        <th>Firstname
+                        <th>Lastname
+                        <th>Age
+                        <th>Company
+                    <tr>
+                        <th>Mark
+                        <th>Zuckerberg
+                        <th>34
+                        <th>Facebook
+                    <tr>
+                        <th>Larry
+                        <th>Page
+                        <th>45
+                        <th>Google
+                    <tr>
+                        <th>Timothy
+                        <th>Cook
+                        <th>57
+                        <th>Apple
+                    <tr>
+                        <th>Bill
+                        <th>Gates
+                        <th>62
+                        <th>Microsoft
+                </tbody>
+            </table>
+        </div>
+        <div id="innerBlock" class="innerBlock">
+            <p class="innerBlockText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deserunt eveniet dolorum, neque perspiciatis,
+					alias earum molestias libero accusantium vel ab? Perspiciatis quisquam rerum ullam autem delectus, iste incidunt accusamus ipsam. 
+					Temporibus nobis mollitia modi? Amet debitis qui ipsam fuga laboriosam, repudiandae, corporis dicta nobis eligendi, necessitatibus atque magni iusto?</p>
+            <div class="squareBlock" id="squareBlock"></div>
+        </div>
+		  <div class="zero">
+			  пустыха
+		  </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
