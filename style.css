@@ -1,0 +1,140 @@
+:root {
+	--width-bar: 0%;
+}
+
+body {
+	margin: 0px;
+	background-color: rgb(72, 156, 193);
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 30px;
+	color: rgb(88, 95, 103);
+}
+
+.toDoList {
+	width: 700px;
+	height: 450px;
+	background-color: white;
+	margin-top: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contentList {
+	width: 650px;
+	height: 400px;
+	background-color: white;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.inputDiv {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.input {
+	width: 100%;
+	border-color: rgb(158, 154, 117);
+	color: rgb(72, 156, 193);
+	font-size: 20px;
+}
+
+.square {
+	width: 60px;
+	height: 60px;
+	background-color: rgb(72, 156, 193);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	justify-content: space-between;
+	bottom: 0px;
+	width: 100%;
+}
+
+.button {
+	width: 200px;
+	height: 40px;
+	background-color: rgb(72, 156, 193);
+	color: white;
+	font-size: 20px;
+	border-style: none;
+}
+
+.trackBar {
+	border-style: groove;
+	width: 200px;
+	position: relative;
+}
+
+.processBar {
+	background-color: yellow;
+	width: var(--width-bar);
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+}
+
+.span {
+	position: relative;
+	left: 30px;
+	top: 5px;
+	font-size: 20px;
+	z-index: 2;
+}
+
+.noteList {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.note {
+	display: flex;
+	flex-direction: row;
+	/* margin-top: 10px; */
+	/* margin-bottom: 10px; */
+	align-items: center;
+	color: rgb(72, 156, 193);
+	border-style: solid;
+	border-left: rgb(88, 95, 103);
+	border-right: rgb(88, 95, 103);
+}
+
+.symbol {
+	width: 30px;
+	height: 30px;
+	color: wheat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	border-style: solid;
+}
+
+.noteSpan {
+	width: 100%;
+}
+
+.inputHidEdit {
+	width: 100%;
+}
